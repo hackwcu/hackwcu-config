@@ -1,6 +1,70 @@
-/* This is custom CSS applied to every page. */
+:root {
+  --primary-color: #4B0951;
+  --seconday-color: #fec435;
+  --grey: #495057 !important;
+}
 
-/* This will change the avatar image for every user. */
-span.avatar {
-    background-image: url(https://hackumass.com/assets/img/redpandaface.png) !important;
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+input:focus, textarea:focus { 
+    outline: none !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 7px var(--primary-color) !important;
+}
+
+.turbolinks-progress-bar {
+  background-color: var(--primary-color) !important;
+}
+
+.nav-tabs .nav-link.active {
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.nav-tabs .nav-link {
+  color: var(--grey) !important;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+.event-application-flex-space-around a {
+  color: var(--grey);
+  text-decoration: none !important;
+}
+
+.bg-warning {
+  background: linear-gradient(90deg, var(--primary-color) 0 50%, var(--seconday-color) 50% 100%);
+  background-position-x: 0%;
+  background-size: 200%;
+  animation-duration: 1.5s;
+  animation-name: slide-background;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.bg-primary-color {
+  background-color: var(--primary-color) !important;
+}
+
+@keyframes slide-background {
+  0% {
+    background-position-x: 0%;
+  }
+
+  25% {
+    background-position-x: 100%;
+  }
+  
+  50% {
+    background-position-x: 200%;
+  }
+
+  100% {
+    background-position-x: 200%;
+  }
 }
