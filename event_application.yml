@@ -28,13 +28,13 @@ custom_fields:
     - 4
     - 5 or more
    hidden: True
- - name: been_to_redpandahacks
-   label: 'Have you previously attended RedPandaHacks?'
+ - name: been_to_hackwcu
+   label: 'Have you previously attended HackWCU?'
    type: boolean
    required: True
-   toggle_field: previous_redpandahacks_comments
- - name: previous_redpandahacks_comments
-   label: "Since you've attended RedPandaHacks before, is there anything new or different you'd like to see at RedPandaHacks I?"
+   toggle_field: previous_hackwcu_comments
+ - name: previous_hackwcu_comments
+   label: "Since you've attended HackWCU before, is there anything new or different you'd like to see at HackWCU 2.0?"
    type: textarea
    max_chars: 500
    hidden: True
@@ -66,8 +66,8 @@ custom_fields:
    label: 'If there are any other tech-related skills not listed above that you would like to share, list them below'
    type: textarea
    max_chars: 500
- - name: get_out_of_hum
-   label: 'What would you like to get out of RedPandaHacks? (select all that apply)'
+ - name: get_out_of_hack
+   label: 'What would you like to get out of HackWCU? (select all that apply)'
    type: multiselect
    options:
     - Learn more about hardware and hardware hacking
@@ -83,23 +83,21 @@ custom_fields:
    type: boolean
    required: True
  - name: how_did_you_hear
-   label: 'How did you hear about RedPandaHacks?'
+   label: 'How did you hear about HackWCU?'
    type: multiselect
    required: True
    options:
-    - I previously attended RedPandaHacks
+    - I previously attended HackWCU
     - From the MLH website
-    - From HackHer413
     - From another MLH event
     - Word of mouth
     - From a teacher
     - From a friend
-    - Social media
-    - RedPandaHacks t-shirt guerilla marketing
-    - I go to UMass
+    - Social Media
+    - I go to WCU
     - Other
  - name: what_hardware
-   label: 'What hardware do you want to see at RedPandaHacks?'
+   label: 'What hardware do you want to see at HackWCU?'
    type: 'textarea'
    max_chars: 500
  - name: fun_question
