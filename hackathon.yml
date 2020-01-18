@@ -6,10 +6,10 @@ logos:
   primary_path: landinglogo.png
   nav_path: navlogo.png
 emails:
-  donotreply: donotreplytothepandas@hackwcu.org
+  donotreply: donotreply@hackwcu.org
   contact: info@hackwcu.org
 slack:
-  subdomain: redpandahacks
+  subdomain: hackwcu
 applications:
   mode: 'open'
   # options: open, waitlist, or closed. defaults to closed.
