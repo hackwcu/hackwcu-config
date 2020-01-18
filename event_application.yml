@@ -100,7 +100,4 @@ custom_fields:
    label: 'What hardware do you want to see at HackWCU?'
    type: 'textarea'
    max_chars: 500
- - name: fun_question
-   label: "Phew! That application was a bit long, but you're almost done! :D Just for fun... what's your spirit animal?"
-
 
