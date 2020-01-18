@@ -4,6 +4,7 @@
   --grey: #495057 !important;
 }
 
+
 .btn-primary {
   background-color: var(--primary-color) !important;
   border-color: var(--primary-color) !important;
@@ -68,3 +69,135 @@ a {
     background-position-x: 200%;
   }
 }
+
+label {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+}
+
+input {
+  position: relative !important;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  margin-right: 5px;
+  box-sizing: content-box;
+  overflow: hidden;
+}
+
+input:before {
+  content: '';
+  display: block;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ccc;
+  transition: 0.2s border-color ease;
+}
+
+input:checked:before {
+  border-color: var(--primary-color);
+  transition: 0.5s border-color ease;
+}
+
+input:disabled:before {
+  border-color: #ccc;
+  background-color: #ccc;
+}
+
+input:after {
+  content: '';
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 50%;
+  background-color: var(--primary-color);
+  width: 16px;
+  height: 16px;
+  border-radius: 100vh;
+  transform: translate(-50%,-50%) scale(0);
+}
+
+input[type="radio"]:before {
+  border-radius: 100vh;
+}
+
+input[type="radio"]:after {
+  width: 16px;
+  height: 16px;
+  border-radius: 100vh;
+  transform: translate(-50%,-50%) scale(0);
+}
+
+input[type="radio"]:checked:after {
+  animation: toggleOnRadio 0.2s ease forwards;
+}
+
+input[type="checkbox"]:before {
+  border-radius: 16px/4;
+}
+
+input[type="checkbox"]:after {
+  width: 9.6px;
+  height: 16px;
+  border-radius: 0;
+  transform: translate(-50%,-85%) scale(0) rotate(45deg);
+  background-color: transparent;
+  box-shadow: 4px 4px 0px 0px var(--primary-color);
+}
+
+input[type="checkbox"]:checked:after {
+  animation: toggleOnCheckbox 0.2s ease forwards;
+}
+
+input[type="checkbox"]:before {
+  border-radius: 16px/4;
+  transition: 0.2s border-color ease, 0.2s background-color ease;
+}
+
+input[type="checkbox"]:checked:not(:disabled):before {
+  background-color: var(--primary-color);
+}
+
+input[type="checkbox"]:not(:disabled):after {
+  box-shadow: 4px 4px 0px 0px white;
+}
+
+@keyframes toggleOnCheckbox {
+  0% {
+    opacity: 0;
+    transform: translate(-50%,-85%) scale(0) rotate(45deg);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translate(-50%,-85%) scale(0.9) rotate(45deg);
+  }
+
+  100% {
+    transform: translate(-50%,-85%) scale(0.8) rotate(45deg);
+  }
+
+}
+
+@keyframes toggleOnRadio {
+  0% {
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(0);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(0.9);
+  }
+
+  100% {
+    transform: translate(-50%,-50%) scale(0.8);
+  }
+
+}
+
+
