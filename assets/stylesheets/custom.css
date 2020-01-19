@@ -4,7 +4,7 @@
   --grey: #495057 !important;
 }
 
-.btn-primary {
+.btn-primary, .btn-purple {
   background-color: var(--primary-color) !important;
   border-color: var(--primary-color) !important;
 }
@@ -217,6 +217,6 @@ input[type='checkbox']:not(:disabled):after {
 
 }
 
-*[class*='bg-'], .btn-purple {
+*[class*='bg-'] {
     background-color: var(--primary-color) !important;
 }

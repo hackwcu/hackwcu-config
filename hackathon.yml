@@ -5,6 +5,7 @@ dashboard_url: dashboard.hackwcu.org
 logos:
   primary_path: landinglogo.png
   nav_path: navlogo.png
+  favicon_url: favicon.png
 emails:
   donotreply: donotreply@hackwcu.org
   contact: info@hackwcu.org
