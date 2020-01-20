@@ -1,12 +1,23 @@
 <div class="card">
     <div class="card-status bg-purple"></div>
     <div class="card-header">
-        <h3 class="card-title">Traveling 🚌</h3>
+        <h3 class="card-title">General Info 📝</h3>
     </div>
     <div class="card-body d-flex flex-column">
-        <h3>Transportation Details</h3>
-        <p>We hope to provide transportation options for those with limited access. We are still working out the details and will send out an update as things are solidified.</p> 
-      
-        <p>In the meantime, send any questions to <%= HackumassWeb::Application::CONTACT_EMAIL %>.</p>
+      <h3>Hey, <%= current_user.first_name.capitalize %></h3>
+      <p>
+        Welcome to <%= HackumassWeb::Application::HACKATHON_NAME %> <%= HackumassWeb::Application::HACKATHON_VERSION %>! 
+        <b>Make sure to invite your friends!</b>
+      </p>
+
+      <h4>What to bring...</h4>
+      <ul>
+        <li><strong>A Valid ID (<em>School / State / Drivers License</em>)</strong></li>
+        <li>Computer (with charger //&nbsp;<em>if you do not have a computer we have a limited supply of computer as well&nbsp;</em>)&nbsp;</li>
+        <li>Deodorant</li>
+        <li>Sleeping Bag</li>
+        <li>Spare clothes</li>
+        <li>Headphones</li>
+      </ul>
     </div>
 </div>

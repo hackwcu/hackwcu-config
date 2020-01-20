@@ -218,5 +218,9 @@ input[type='checkbox']:not(:disabled):after {
 }
 
 *[class*='bg-'] {
-    background-color: var(--primary-color) !important;
+  background-color: var(--primary-color) !important;
+}
+
+.event-application-resume-container {
+  height: auto !important;
 }
