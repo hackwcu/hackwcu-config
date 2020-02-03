@@ -3,6 +3,17 @@ options:
   hide_mlh_toc: False
   min_resume_age: 17
 custom_fields:
+ - name: race_or_ethnicity
+   label: What is your race/ethnicity?"
+   type: select
+   options:
+    - American Indian or Alaskan Native
+    - Asian / Pacific Islander
+    - Black or African American
+    - Hispanic
+    - White / Caucasian
+    - Multiple ethnicity / Other
+    - Prefer not to answer
  - name: linkedin_url
    label: 'LinkedIn URL'
    validate_regex: '\A(https:\/\/)?(www.)?linkedin.com\/in\/\S+\z'
