@@ -1,1 +1,3 @@
 custom_questions:
+ - name: fun
+   label: "What is one thing you would like to see at HackWCU?"
