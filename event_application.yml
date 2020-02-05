@@ -16,7 +16,7 @@ custom_fields:
     - Prefer not to answer
  - name: linkedin_url
    label: 'LinkedIn URL'
-   validate_regex: '\A(https:\/\/)?(www.)?linkedin.com\/in\/\S+\z'
+   validate_regex: '^((http|https):\/\/)?+(www.linkedin.com\/)+[a-z]+(\/)+[a-zA-Z0-9-]{5,30}+$'
    validate_error: 'Your Linkedin URL is invalid. Example format: https://linkedin.com/in/yourprofile'
  - name: github_url
    label: 'GitHub URL'
