@@ -4,7 +4,7 @@ options:
   min_resume_age: 17
 custom_fields:
  - name: race_or_ethnicity
-   label: What is your race/ethnicity?"
+   label: What is your race/ethnicity?
    type: select
    options:
     - American Indian or Alaskan Native
@@ -16,11 +16,11 @@ custom_fields:
     - Prefer not to answer
  - name: linkedin_url
    label: 'LinkedIn URL'
-   validate_regex: '^((http|https):\/\/)?+(www.linkedin.com\/)+[a-z]+(\/)+[a-zA-Z0-9-]{5,30}+$'
+   validate_regex: 'http(s)?:\/\/([\w]+\.)?linkedin\.com\/in\/[A-z0-9_-]+\/?'
    validate_error: 'Your Linkedin URL is invalid. Example format: https://linkedin.com/in/yourprofile'
  - name: github_url
    label: 'GitHub URL'
-   validate_regex: '\A(https:\/\/)?(www.)?github.com\/\S+\z'
+   validate_regex: 'http(s)?:\/\/(www\.)?github\.com\/[A-z0-9_-]+\/?'
    validate_error: 'Your Github URL is invalid. Example format: https://github.com/yourprofile'
  - name: other_url
    label: 'Other website URL'
